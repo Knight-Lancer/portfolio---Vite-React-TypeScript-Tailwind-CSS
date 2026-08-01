@@ -6,7 +6,7 @@ Object.defineProperty(Element.prototype, "scrollIntoView", {
   writable: true,
 });
 
-window.matchMedia = jest.fn().mockImplementation((query: string) => ({
+window.matchMedia = jest.fn().mockImplementation((query) => ({
   matches: false,
   media: query,
   onchange: null,
